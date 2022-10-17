@@ -47,7 +47,7 @@ char* del_substr(char *pstr, char *psub){
 int a = 0;
     for (int i = 0; *(pstr + i) != '\0'; i++){
         for ( a = 0; *(psub + a) != '\0'; a++){
-            if(*(pstr+i) == *psub){
+            if(*(pstr+i) == *psub){  // if(*(pstr + i + a) == *(psub + a))  // penso que seja desta forma
                 continue;
             }else{
                 break;
